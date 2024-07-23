@@ -12,3 +12,24 @@ Modules: Support for importing and exporting functionalities.
 Promises: A better way to handle asynchronous operations.
 Iterators and Generators: Custom iteration protocols.
 Symbols: A new primitive data type.
+
+
+
+
+
+
+-------------
+Before ES6, methods were defined using function expressions like this:
+
+const obj = {
+  myMethod: function() {
+    console.log('Hello, world!');
+  }
+};
+With ES6, you can define methods more succinctly by omitting the function keyword:
+
+const obj = {
+  myMethod() {
+    console.log('Hello, world!');
+  }
+};
