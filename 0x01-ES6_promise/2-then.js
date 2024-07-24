@@ -1,17 +1,13 @@
-export default function getFullResponseFromAPI(success) {
-  const promise = new Promise((resolve, reject) => {
-    if (success) {
+export default function handleResponseFromAPI(promise) {
+  const myPromise = new Promise((resolve, reject) => {
+    if (promise) {
       resolve({
         status: 200,
-        body: 'Success',
+        body: 'success',
       });
     } else {
       reject(new Error());
     }
-  });
-
-  // arrow function
-  const final = () => console.log('Got a response from the API');
-  promise.finally(final);
-  return promise;
+  }).finally(() => console.log('Got a response from the API'));
+  return myPromise;
 }
