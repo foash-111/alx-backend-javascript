@@ -11,7 +11,7 @@ export default function getFullResponseFromAPI(success) {
   });
 
   // arrow function
-  const resolver = () => console.log('Got a response from the API');
-  promise.then(resolver);
+  const final = () => console.log('Got a response from the API');
+  promise.finally(final);
   return promise;
 }
