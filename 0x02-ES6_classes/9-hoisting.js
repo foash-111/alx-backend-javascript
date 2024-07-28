@@ -13,9 +13,8 @@ export class HolbertonClass {
   }
 }
 
-export class StudentHolberton extends HolbertonClass {
+export class StudentHolberton {
   constructor(firstName, lastName, holbertonClass) {
-    super(holbertonClass.year, holbertonClass.location);
     this._firstName = firstName;
     this._lastName = lastName;
     this._holbertonClass = holbertonClass;
