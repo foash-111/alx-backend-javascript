@@ -14,7 +14,7 @@ class HolbertonClass {
 }
 class StudentHolberton extends HolbertonClass {
   constructor(firstName, lastName, holbertonClass) {
-    super(holbertonClass.year, holbertonClass.location)
+    super(holbertonClass.year, holbertonClass.location);
     this._firstName = firstName;
     this._lastName = lastName;
     this._holbertonClass = holbertonClass;
@@ -39,7 +39,7 @@ const student4 = new StudentHolberton('Donald', 'Bush', class2019);
 const student5 = new StudentHolberton('Jason', 'Sandler', class2019);
 const listOfStudents = [student1, student2, student3, student4, student5];
 
-export default listOfStudents
+export default listOfStudents;
 // console.log(listOfStudents);
 
 // console.log(student1.fullStudentDescription)
