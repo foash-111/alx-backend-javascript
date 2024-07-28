@@ -9,7 +9,7 @@ export default class Building {
     if (this.constructor.name !== 'Building'
       && this.evacuationWarningMessage === Building.prototype.evacuationWarningMessage) {
       // console.log(typeof this.constructor.name)
-      console.log(new Error('Class extending Building must override evacuationWarningMessage'));
+      throw new Error('Class extending Building must override evacuationWarningMessage');
     }
 
     // this.evacuationWarningMessage === Building.prototype.evacuationWarningMessage
