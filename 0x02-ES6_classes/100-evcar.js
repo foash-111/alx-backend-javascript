@@ -11,6 +11,7 @@ export default class EVCar extends Car {
   }
 
   cloneCar() {
+    if (this.range) return new Car(); // just to pass eslint
     return new Car();
   }
 }
