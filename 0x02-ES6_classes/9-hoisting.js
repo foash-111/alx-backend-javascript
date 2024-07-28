@@ -12,6 +12,7 @@ class HolbertonClass {
     return this._location;
   }
 }
+
 class StudentHolberton extends HolbertonClass {
   constructor(firstName, lastName, holbertonClass) {
     super(holbertonClass.year, holbertonClass.location);
