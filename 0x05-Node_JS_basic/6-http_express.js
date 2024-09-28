@@ -6,6 +6,4 @@ app.get('/', (req, res) => {
   res.send('Hello Holberton School!');
 });
 
-app.listen(1245, () => {
-  console.log('server is running on http://localhost:1246');
-});
+app.listen(1245);
